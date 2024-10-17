@@ -52,7 +52,7 @@ jQuery(function () {
     middle_right.html(
       `<button aria-label="option scissor" type="button" class="btn btn-outline-primary option-btn" data-option="scissor"><img src="${scissorProp}" alt="Scissor" class="myImage" /></button>`
     );
-    game_result.html("Select from the given option and click Play!");
+    game_result.html("Select from the given option and click Play");
   }
 
   // Gameplay function
