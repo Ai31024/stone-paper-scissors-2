@@ -79,3 +79,8 @@ body {
   background-color: #f8f8ff; /* Ghost White */
   color: #333; /* Dark text color */
 }
+
+.my-items {
+  display: flex;
+  justify-content: center;
+}
