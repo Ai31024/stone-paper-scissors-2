@@ -141,7 +141,7 @@ jQuery(function () {
           break;
         case "condition 1":
           top_center.html("<p>It's a tie!</p>");
-          game_result.html(`<p>You both chose ${userChoice}</p>`);
+          game_result.html(`<p>You both choose ${userChoice}</p>`);
           middle_center.html(
             `<img src="${drawGameEffect}" alt="tie game" class="myImage" />`
           );
