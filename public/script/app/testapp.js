@@ -30,6 +30,7 @@ jQuery(function () {
   const bottom_left = $("#bottom-left");
   const bottom_center = $("#bottom-center");
   const bottom_right = $("#bottom-right");
+  const game_result = $("#game-conclusion");
 
   // Function to handle audio playback
   function playAudio(audio) {
@@ -49,6 +50,7 @@ jQuery(function () {
     middle_right.html(
       `<button aria-label="option scissor" type="button" class="btn btn-outline-primary option-btn" data-option="scissor"><img src="${scissorProp}" alt="Scissor" class="myImage" /></button>`
     );
+    game_result.html("");
   }
 
   // Gameplay function
@@ -138,6 +140,7 @@ jQuery(function () {
           break;
         case "condition 1":
           top_center.html("<p>It's a tie!</p>");
+          game_result.html(`<p>You both chose ${userChoice}</p>`);
           middle_center.html(
             `<img src="${drawGameEffect}" alt="tie game" class="myImage" />`
           );
@@ -145,6 +148,7 @@ jQuery(function () {
           break;
         case "condition 2":
           top_center.html(`<p>You win!</p>`);
+          game_result.html(`<p>${userChoice} beats ${compChoice}</p>`);
           middle_center.html(
             `<img src="${winGameEffect}" alt="win game" class="myImage" />`
           );
@@ -152,6 +156,7 @@ jQuery(function () {
           break;
         case "condition 3":
           top_center.html(`<p>You lose!</p>`);
+          game_result.html(`<p>${compChoice} beats ${userChoice}</p>`);
           middle_center.html(
             `<img src="${loseGameEffect}" alt="lose game" class="myImage" />`
           );
