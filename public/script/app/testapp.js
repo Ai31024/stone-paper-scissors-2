@@ -144,14 +144,14 @@ jQuery(function () {
           playAudio(drawGameAudio);
           break;
         case "condition 2":
-          top_center.html(`<p>You win! ${userChoice} beats ${compChoice}</p>`);
+          top_center.html(`<p>You win!</p>`);
           middle_center.html(
             `<img src="${winGameEffect}" alt="win game" class="myImage" />`
           );
           playAudio(winGameAudio);
           break;
         case "condition 3":
-          top_center.html(`<p>You lose! ${compChoice} beats ${userChoice}</p>`);
+          top_center.html(`<p>You lose!</p>`);
           middle_center.html(
             `<img src="${loseGameEffect}" alt="lose game" class="myImage" />`
           );
