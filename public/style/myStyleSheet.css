@@ -1,68 +1,80 @@
+/* Image Styles */
 .myImage {
-  width: 100px !important;
-  height: 100px !important;
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
   object-fit: cover;
 }
 
+/* For tablet devices */
 @media (max-width: 768px) {
   .myImage {
-    width: 80px !important;
-    height: 80px !important;
+    max-width: 80px;
+    max-height: 80px;
   }
 }
 
+/* For small mobile devices */
 @media (max-width: 576px) {
   .myImage {
-    width: 60px !important;
-    height: 60px !important;
+    max-width: 60px;
+    max-height: 60px;
   }
 }
 
+/* Grid Item Styles */
 .grid-item {
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Increase spacing for mobile */
+/* Adjust margin and font size for mobile */
 @media (max-width: 767.98px) {
   .grid-item {
-    margin-bottom: 20px; /* Slightly more space for mobile */
+    margin-bottom: 20px; /* More space on mobile */
+    font-size: 20px;
   }
 }
 
-/* Responsive adjustments for the game layout */
+/* Game Layout Container */
 @media (max-width: 992px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
+/* Further adjustments for smaller screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 28px; /* Smaller font size for smaller screens */
+    font-size: 28px; /* Smaller font size */
   }
 
   .grid-item {
-    font-size: 20px; /* Adjust font size */
+    font-size: 18px; /* Reduce font size further */
   }
 }
 
+/* For very small mobile screens */
 @media (max-width: 576px) {
   h1 {
-    font-size: 24px; /* Even smaller font size for extra small screens */
+    font-size: 24px; /* Even smaller font */
   }
 
   .grid-item {
-    font-size: 18px; /* Further adjust font size */
+    font-size: 16px; /* Further adjust font size */
   }
 }
 
+/* Background and Text Color */
 body {
   background-color: #f8f8ff; /* Ghost White */
-  color: #333; /* A dark color for text */
+  color: #333; /* Dark text color */
 }
