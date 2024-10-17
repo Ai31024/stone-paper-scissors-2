@@ -96,7 +96,7 @@ jQuery(function () {
   // Main game logic
   function gameLogic() {
     let userChoice = null;
-    const compChoice = choices[Math.floor(Math.random() * choices.length)];
+    let compChoice = choices[Math.floor(Math.random() * choices.length)];
 
     // Option selection logic
     $(document).on("click", ".option-btn", function () {
