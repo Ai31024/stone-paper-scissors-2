@@ -1,7 +1,8 @@
 jQuery(function () {
   // Setting pre-requisites
   const choices = ["stone", "paper", "scissor"];
-  let compChoice = choices[Math.floor(Math.random() * choices.length)];
+  let userChoice;
+  let compChoice;
   let userScore = 0;
   let cpuScore = 0;
 
@@ -85,6 +86,7 @@ jQuery(function () {
 
   // Restart game function
   function restartGame() {
+    userChoice = null;
     top_left.html("");
     top_center.html("Options");
     top_right.html("");
@@ -96,13 +98,12 @@ jQuery(function () {
 
   // Main game logic
   function gameLogic() {
-    let userChoice = null;
-
     // Option selection logic
     $(document).on("click", ".option-btn", function () {
       $(".option-btn").removeClass("active");
       $(this).addClass("active");
       userChoice = $(this).data("option");
+      compChoice = choices[Math.floor(Math.random() * choices.length)];
     });
 
     // Start the game when "Play" button is clicked
