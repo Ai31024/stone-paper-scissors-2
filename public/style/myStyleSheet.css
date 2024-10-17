@@ -1,0 +1,68 @@
+.myImage {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .myImage {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .myImage {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.grid-item {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Increase spacing for mobile */
+@media (max-width: 767.98px) {
+  .grid-item {
+    margin-bottom: 20px; /* Slightly more space for mobile */
+  }
+}
+
+/* Responsive adjustments for the game layout */
+@media (max-width: 992px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px; /* Smaller font size for smaller screens */
+  }
+
+  .grid-item {
+    font-size: 20px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px; /* Even smaller font size for extra small screens */
+  }
+
+  .grid-item {
+    font-size: 18px; /* Further adjust font size */
+  }
+}
+
+body {
+  background-color: #f8f8ff; /* Ghost White */
+  color: #333; /* A dark color for text */
+}
