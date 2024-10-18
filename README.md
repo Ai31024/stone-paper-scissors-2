@@ -52,6 +52,12 @@ This is a fun and interactive Stone Paper Scissors game built using **jQuery**, 
     http://localhost:3000
     ```
 
+    or, you can directly navigate to this address:
+
+    ```text
+    https://ai31024.github.io/stone-paper-scissors-2/
+    ```
+
 ## How to Play
 
 1. Select one option: **Stone**, **Paper**, or **Scissors**.
