@@ -1,5 +1,5 @@
 
-# Stone Paper Scissors Game
+# Stone Paper Scissors 2
 
 ## Description
 
@@ -25,13 +25,13 @@ This is a fun and interactive Stone Paper Scissors game built using **jQuery**, 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/stone-paper-scissors-game.git
+    git clone https://github.com/Ai31024/stone-paper-scissors-2.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd stone-paper-scissors-game
+    cd stone-paper-scissors-2
     ```
 
 3. Install dependencies:
@@ -43,7 +43,7 @@ This is a fun and interactive Stone Paper Scissors game built using **jQuery**, 
 4. Start the server:
 
     ```bash
-    node app.js
+    nodemon server.js
     ```
 
 5. Open your browser and navigate to:
