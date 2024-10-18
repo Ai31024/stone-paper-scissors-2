@@ -14,7 +14,7 @@ jQuery(function () {
   // Setting effect files
   const winGameEffect = "./public/image/effects/win_gif.gif";
   const loseGameEffect = "./public/image/effects/lose_gif.gif";
-  const drawGameEffect = "./public/image/effects/draw_gif.gif";
+  const drawGameEffect = "./public/image/effects/draw_gif_2.gif";
 
   // Setting props files
   const stoneProp = "./public/image/props/stone.png";
